@@ -45,7 +45,7 @@ header nav ul li a { font-weight:500; }
     align-items: center; 
     height: 100vh; 
     padding: 0 50px; /* horizontal padding */
-    gap: 60px; /* increased gap to shift image slightly left */
+    gap: 100px; /*increased gap to shift image slightly left */
 }
 
 .hero-text {
