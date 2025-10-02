@@ -115,7 +115,8 @@ header nav ul li a {
 
 .hero-img {
   flex: 0 0 auto;
-  margin-left: -30px;
+  max-width: 300px;
+  margin-left: 20px; /* adjust as needed */
 }
 
 .hero-img img {
