@@ -39,12 +39,44 @@ header nav ul li a { font-weight:500; }
 #theme-toggle:hover { background:var(--accent-color); color:var(--bg-color); }
 
 /* HERO */
-.hero { display:flex; justify-content:space-between; align-items:center; height:100vh; padding:0 80px; }
-.hero-text h1 { font-size:48px; }
-.hero-text span { color: var(--accent-color); }
-.hero-text p { margin:20px 0; }
-.hero-img img { width:350px; border-radius:50%; box-shadow:0 0 20px var(--accent-color); }
-.btn { background:var(--accent-color); padding:10px 20px; border-radius:5px; color:var(--bg-color); font-weight:bold; }
+.hero { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 100vh; 
+    padding: 0 50px; /* horizontal padding */
+    gap: 60px; /* increased gap to shift image slightly left */
+}
+
+.hero-text {
+    flex: 1; /* text takes left side */
+}
+
+.hero-text h1 { 
+    font-size: 42px;
+}
+
+.hero-text span { 
+    color: var(--accent-color); 
+}
+
+.hero-text p { 
+    margin: 20px 0; 
+    font-size: 18px;
+    max-width: 600px; 
+}
+
+.hero-img {
+    flex: 0 0 auto; /* prevent stretching */
+    margin-left: -30px; /* shift image slightly toward center */
+}
+
+.hero-img img { 
+    width: 250px; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px var(--accent-color); 
+}
+
 
 /* Skills */
 .skills { padding:100px 50px; text-align:center; }
