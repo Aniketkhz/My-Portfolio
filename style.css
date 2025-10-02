@@ -70,3 +70,11 @@ header nav ul li a { font-weight: 500; }
 /* --- RESUME & CONTACT --- */
 .resume, .contact { padding: 100px 50px; text-align: center; }
 footer { text-align: center; padding: 20px; background: #111; margin-top: 50px; transition: background 0.4s; }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .hero { flex-direction: column; text-align: center; padding: 50px; }
+  .hero-img img { width: 200px; margin-top: 20px; }
+  .project-grid { grid-template-columns: 1fr; }
+  header nav ul { display: none; } /* optionally add hamburger menu later */
+}
