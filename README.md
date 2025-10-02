@@ -1,4 +1,5 @@
-Portfolio Website - Aniket Khadanga
+**Portfolio Website - Aniket Khadanga**
+
 A modern, responsive portfolio website built with HTML, CSS, and JavaScript featuring dark/light theme toggle and smooth animations.
 
 🚀 Live Demo
