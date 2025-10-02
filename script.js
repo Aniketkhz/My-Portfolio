@@ -48,7 +48,7 @@ heroTimeline
     duration: 0.8,
     ease: "back.out(1.7)"
   }, "-=0.5")
-  .from(".hero-img img", {
+  .from(".profile-placeholder", {
     opacity: 0,
     x: 80,
     duration: 1.2,
@@ -173,7 +173,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Add parallax effect to hero image
-gsap.to(".hero-img img", {
+gsap.to(".profile-placeholder", {
   y: -30,
   ease: "none",
   scrollTrigger: {
