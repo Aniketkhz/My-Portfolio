@@ -8,19 +8,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// DARK/LIGHT MODE TOGGLE
+// DARK/LIGHT MODE TOGGLE WITH PERSISTENCE
 const toggleBtn = document.getElementById("theme-toggle");
 const body = document.body;
 
+// Load saved theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  body.classList.add(savedTheme);
+  if (savedTheme === 'light-theme') toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+}
+
 toggleBtn.addEventListener("click", () => {
   body.classList.toggle("light-theme");
-
-  // Change icon between moon 🌙 and sun ☀️
-  if (body.classList.contains("light-theme")) {
-    toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
-  } else {
-    toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
-  }
+  const isLight = body.classList.contains("light-theme");
+  toggleBtn.innerHTML = isLight ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+  localStorage.setItem('theme', isLight ? 'light-theme' : '');
 });
 
 // GSAP Animations
